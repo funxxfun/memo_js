@@ -4,9 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <script src="../lib/jquery.min.js"></script>
+  <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../lib/common.css">
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <title>MEMO</title>
 </head>
 <body>
-  
+  <div class="container">
+    <h1>〜メモ〜</h1>
+    <div class="form-group">
+      <input type="text" id="line" value="text" />
+      <button type="button" class="btn btn-primary" id="btnAppend">追加</button>
+      <button type="button" class="btn btn-primary" id="btnNest">次</button>
+    </div>
+
+    <div id="template" style="display: none;">
+      <li>
+        <label for="">
+          <input type="radio" name="sel" />
+          <span>%s</span>
+        </label>
+      </li>
+    </div>
+
+    <ul>
+      <li id="group-1">
+        <label for="">
+          <input type="radio" name="sel" checked />
+          <span>ルート</span>
+        </label>
+      </li>
+    </ul>
+  </div>
 </body>
 </html>
